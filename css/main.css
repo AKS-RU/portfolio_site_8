@@ -88,6 +88,9 @@ button {
   --second-family: "Dela Gothic One", sans-serif;
   --third-family: "Arial", sans-serif;
 }
+.mobile {
+  display: none;
+}
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -111,6 +114,13 @@ h2 {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 48px;
+  text-align: center;
+  color: #000;
+}
+h3 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 40px;
   text-align: center;
   color: #000;
 }
@@ -244,11 +254,6 @@ h5 {
   padding-top: 59px;
   margin: 0 auto;
   max-width: 960px;
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 40px;
-  text-align: center;
-  color: #000;
   padding-bottom: 66px;
 }
 .benefits__marker {
@@ -503,8 +508,8 @@ h5 {
   .header__nav {
     position: fixed;
     top: 0;
-    left: -20%;
-    width: 20%;
+    left: -200px;
+    width: 200px;
     margin-top: 70px;
     border-radius: 30px;
     max-height: 100vh;
@@ -531,5 +536,105 @@ h5 {
     max-width: 300px;
   }
 }
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  h1 {
+    font-size: 31px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  .main-screen__flex-left p {
+    font-size: 16px;
+  }
+  .form {
+    max-width: 688px;
+    width: 100%;
+    /* margin-left: 110px; */
+    padding-bottom: 102px;
+  }
+  .form__flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 16px;
+  }
+  .form a {
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 328px;
+    height: 66px;
+    line-height: 24px;
+  }
+  .form p {
+    font-size: 12px;
+  }
+  .main-screen__flex-right {
+    display: none;
+  }
+  .benefits__marker {
+    border-radius: 30px;
+    height: 35px;
+    line-height: 35px;
+  }
+  #marker1 {
+    width: 137px;
+    background: #99b5eb;
+  }
+  #marker2 {
+    width: 123px;
+    background: #99c2a5;
+  }
+  #marker3 {
+    width: 168px;
+    background: #f9e78a;
+  }
+  .feedback__grid {
+    max-width: 1048px;
+    padding-top: 33px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 32px;
+    padding-bottom: 63px;
+  }
+  .feedback__grid-card:last-child:nth-child(odd) {
+    grid-column: span 1;
+  }
+  .faq__item-flex-questom {
+    font-size: 20px;
+  }
+  .faq__item-flex-answer {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 358px) {
+  .form input {
+    width: 280px;
+  }
+  .form a {
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 280px;
+    height: 66px;
+    line-height: 24px;
+  }
+  .feedback__grid-card {
+    width: 280px;
+    height: 320px;
+  }
+  .feedback__grid-card-content {
+    max-width: 260px;
+  }
 }

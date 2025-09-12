@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Обработка бургер кнопки
 const burgerBtn = document.querySelector(".burger-btn");
 const headerNav = document.querySelector(".header__nav");
 
