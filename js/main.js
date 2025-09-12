@@ -21,3 +21,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+const burgerBtn = document.querySelector(".burger-btn");
+const headerNav = document.querySelector(".header__nav");
+
+burgerBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  headerNav.classList.toggle("active");
+  burgerBtn.classList.toggle("active");
+});
+
+// Закрытие меню при клике вне его
+document.addEventListener("click", (e) => {
+  if (!burgerBtn.contains(e.target) && !headerNav.contains(e.target)) {
+    headerNav.classList.remove("active");
+    burgerBtn.classList.remove("active");
+  }
+});
