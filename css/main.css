@@ -442,6 +442,15 @@ h5 {
   color: #000;
   padding-bottom: 65px;
 }
+.footer__copyright-mobile {
+  display: none;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  padding-bottom: 65px;
+}
 /* media */
 @media screen and (max-width: 1400px) {
   .container {
@@ -555,6 +564,9 @@ h5 {
   h5 {
     font-size: 16px;
   }
+  .main-screen {
+    text-align: center;
+  }
   .main-screen__flex-left p {
     font-size: 16px;
   }
@@ -617,6 +629,74 @@ h5 {
   }
   .faq__item-flex-answer {
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+}
+@media screen and (max-width: 360px) {
+  .header__flex {
+    padding-top: 0px;
+  }
+  .main-screen__flex {
+    padding-top: 85px;
+    text-align: left;
+  }
+  .main-screen__flex-left p {
+    max-width: 240px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+  .main-screen .form {
+    padding-bottom: 66px;
+  }
+  .benefits h3 {
+    padding-top: 69px;
+    width: 281px;
+    padding-bottom: 71px;
+  }
+  .connect h5 {
+    padding-top: 36px;
+  }
+  .connect img {
+    padding-top: 30px;
+    padding-bottom: 46px;
+  }
+  .data .block {
+    padding-top: 63px;
+  }
+  .feedback__grid {
+    padding-bottom: 66px;
+  }
+  .faq__item {
+    padding-bottom: 65px;
+  }
+  .faq__item-flex-questom {
+    padding-top: 27px;
+    padding-bottom: 23px;
+  }
+  .footer h2 {
+    padding-top: 75px;
+    font-size: 31px;
+    padding-bottom: 33px;
+  }
+  .footer h5 {
+    margin: 0 auto;
+    text-align: center;
+    width: 183px;
+  }
+  .footer .form {
+    padding-top: 30px;
+    padding-bottom: 27px;
+  }
+  .footer__copyright {
+    display: none;
+  }
+  .footer__copyright-mobile {
+    display: block;
+    width: 222px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 65px;
   }
 }
 @media screen and (max-width: 358px) {
